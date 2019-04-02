@@ -1,0 +1,22 @@
+{
+  "name": "pincode_api",
+  "version": "1.0.0",
+  "description": "All india pincode directory",
+  "main": "pincode_api.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "postalpincode.in",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
+    "fetch": "^1.1.0",
+    "joi": "^14.3.1",
+    "lodash": "^4.17.11",
+    "mysql": "^2.16.0",
+    "request": "^2.88.0",
+    "xmlhttprequest": "^1.8.0"
+  }
+}
