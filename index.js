@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 const bodyparser = require('body-parser');
-const port = 8080;
+const port = 9001;
 const joi = require('joi');
 app.use(bodyparser.json());
 app.use(
@@ -13,14 +13,16 @@ app.use(
 const { schema } = require('./schema');
 const { apiCall } = require('./model');
 
-app.get('/pincode', async (req, res) => {
+app.post('/pincode', async (req, res) => {
 	const data = req.body;
 	const joi_error = joi.validate(data, schema);
 	if (joi_error.error === null) {
 		apiCall(data, (err, result) => {
 			if (err) {
+				console.log(err);
 				res.send(err);
 			} else {
+				console.log(result);
 				res.send(result);
 			}
 		});

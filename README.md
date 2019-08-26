@@ -1,6 +1,6 @@
 # GetPincodeDetailsUsing-LocalDB-NODEJS
 
-#Add sql file'data in your database.
-#connect database.
-#`npm start`.
-#run index file.
+# Add sql file'data in your database.
+# Connect database.
+# `npm install`
+# `npm start`

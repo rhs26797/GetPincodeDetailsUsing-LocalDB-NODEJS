@@ -12,7 +12,6 @@ const apiCall = async (data, callback) => {
 	const { pincode } = data;
 
 	try {
-		console.log(pincode);
 		connection.query(`SELECT * FROM pincodesofindia WHERE pincode=${pincode}`, (err, resultData) => {
 			connection.end();
 			if (err) {

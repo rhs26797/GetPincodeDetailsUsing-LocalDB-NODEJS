@@ -4,12 +4,9 @@
 	"description": "All india pincode directory",
 	"main": "pincode_api.js",
 	"scripts": {
-		"start": "node index.js",
-		"lint": "eslint  --fix --env node src/**",
-		"test": "jest",
-		"prettify": "pretty-quick"
+		"start": "node index.js"
 	},
-	"author": "Rohit Suryawanshi",
+	"author": "postalpincode.in",
 	"license": "ISC",
 	"dependencies": {
 		"body-parser": "^1.18.3",
